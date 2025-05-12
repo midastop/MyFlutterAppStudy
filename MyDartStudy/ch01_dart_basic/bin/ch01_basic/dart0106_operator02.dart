@@ -22,5 +22,4 @@ void main() {
   // !(not) 연산자는 true면 flase, false면 true를 반환하는 연산자 이다.
   print(! true);
 
-
 }
