@@ -1,6 +1,10 @@
 // if 문
 void main() {
   int score = 69;
+
+  // if 문은 조건식이 참일 때 실행되는 조건문 이다.
+  // if(조건식) { 조건식이 참일 때 실행 }
+  // if(조건식) { 조건식이 참일 때 실행 } else { 조건식이 거짓일 때 실행 }
   if(score >= 70) {
     print("합격");
   } else {
@@ -18,5 +22,4 @@ void main() {
   } else {
     print("$score점 : F학점");
   }
-
 }

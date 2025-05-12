@@ -1,8 +1,7 @@
-// 연산자(Operator)
-// 기본 수치 연산자
+// 수치 연산자(Numeric Operator)
 void main() {
 
-  // 사칙 연산자
+  // 사칙 연산자(Arithmetic Operator)
   int i = 10;
   print(i + 2 - 1);
   print(i / 3);

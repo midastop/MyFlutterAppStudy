@@ -5,7 +5,7 @@ void main() {
   Grade grade = Grade.A;
   print(grade);
 
-  Status status = Status.delivery;
+  DeliveryStatus status = DeliveryStatus.delivery;
   print(status);
 }
 
@@ -17,7 +17,7 @@ enum Grade {
   F,
 }
 
-enum Status {
+enum DeliveryStatus {
   preparing,
   delivery,
   complete,
