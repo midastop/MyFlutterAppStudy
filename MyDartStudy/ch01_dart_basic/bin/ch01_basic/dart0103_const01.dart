@@ -5,6 +5,10 @@
  * 변수는 프로그램 중에 값이 변경될 수 있지만 상수는 한 번 값이 지정되면
  * 프로그램이 실행되는 동안 그 값을 변경할 수 없다.
  **/
+int add(int a, int b) {
+  return a + b;
+}
+
 void main() {
 
   // final을 변수의 타입 앞에 붙여서 상수를 선언할 수 있으며 상수는
@@ -18,14 +22,16 @@ void main() {
   const String grade = "1";
   // grade = "3";
   
-  // 코드가 실행될 때 값이 확정되면 final를 사용
-  final DateTime now = DateTime.now();
-  print(now);
+  // 코드가 실행되는 시간에 값이 확정되면 final를 사용
+  final int sum1 = add(100, 200);
+  print(sum1);
 
   // 코드가 실행되기 전에 값이 확정되면 const를 사용
-  //const DateTime now2 = DateTime.now();
-  //print(now);
-  final int i = 10;
-  const int i2 = 10;
+  // 아래는 코드가 실행되는 시간에 add() 함수의 반환 값을 받아서
+  // 상수 값이 결정되기 때문에 const를 사용하면 오류가 발생한다.
+  // const int sum2 = add(10, 20);
+  //print(sum2);
 }
+
+
 

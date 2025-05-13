@@ -1,6 +1,7 @@
 // Map
-// Map은 키와 값 한 쌍으로 데이터를 저장하고 관리해 주는 객체
-// https://api.dart.dev/dart-core/Map-class.html
+/* Map은 키와 값 한 쌍으로 데이터를 저장하고 관리해 주는 객체
+ * https://api.dart.dev/dart-core/Map-class.html
+ **/
 void main() {
 
   Map<String, int> map1 = {

@@ -1,10 +1,12 @@
 // 컬렉션(Collection)
-// 컬렉션은 여러 값을 하나의 객체에 담아서 관리할 수 있는 객체로 대표적인 컬렉션에는 List, Set, Map이 있다.
-// https://dart.dev/language/collections
-
+/* 컬렉션은 여러 값을 하나의 객체에 담아서 관리할 수 있는 객체로
+ * 대표적인 컬렉션에는 List, Set, Map 등이 있다.
+ * https://dart.dev/language/collections
+ **/
 // List
-// List는 여러 값을 순서대로 저장하고 관리해 주는 객체
-// https://api.dart.dev/stable/latest/dart-core/List-class.html
+/* List는 여러 값을 순서대로 저장하고 관리해 주는 객체
+ * https://api.dart.dev/stable/latest/dart-core/List-class.html
+ **/
 void main() {
   // List에 저장할 데이터 타입을 <> 안에 지정한다.
   // 이렇게 컬렉션에 저장할 타입을 지정하는 것을 제네릭(Generic)이라고 한다.

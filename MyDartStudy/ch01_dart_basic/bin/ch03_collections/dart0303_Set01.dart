@@ -1,7 +1,8 @@
 // Set
-// Set은 순서가 없는 고유한 항목의 집합을 표현하기 위한 객체
-// Set은 중복이 없는 고유한 값을 저장하고 관리해 주는 객체로 집합을 표현하기 위한 객체
-// https://api.dart.dev/dart-core/Set-class.html
+/* Set은 순서가 없는 고유한 항목의 집합을 표현하기 위한 객체
+ * Set은 중복이 없는 고유한 값을 저장하고 관리해 주는 객체로 집합을 표현하기 위한 객체
+ * https://api.dart.dev/dart-core/Set-class.html
+ **/
 void main() {
   Set<int> nums = {1, 3, 5};
 
