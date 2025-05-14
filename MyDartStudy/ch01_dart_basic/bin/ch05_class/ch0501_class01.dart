@@ -26,7 +26,7 @@
  **/
 class Player {
   // late는 변수의 초기화를 미루겠다는 의미이다.
-  /* 클래스에 정의된 변수를 속성(Property)이라고 부른다.
+  /* 클래스에 정의된 변수를 속성(Property) 또는 필드(Field)라고 부른다.
    **/
   late String name;
   int age = 0;

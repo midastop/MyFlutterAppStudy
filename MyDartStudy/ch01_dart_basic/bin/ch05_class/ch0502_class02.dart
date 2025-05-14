@@ -1,9 +1,9 @@
 // 생성자(Constructor)
+// https://dart.dev/language/constructors
 class Tv {
-  // late는 변수의 초기화를 미루겠다는 의미
-  late String name;
+  String name;
   bool isPower = false;
-  late int? channel;
+  int? channel;
 
   // 생성자 이름은 클래스 이름과 동일해야 한다.
   //Tv(String name, int channel) {
@@ -13,30 +13,27 @@ class Tv {
   // 다트는 자바나 C++ 처럼 메소드 오버로딩을 지원하지 않는다.
   // Tv(String name) : this.name = name, this.channel = channel;
 
-  // 위의 생성자를 다음과 같이 간단히 정의할 수 있으며 해당 변수에 매개변수 값이 할당된다.
+  // 위의 생성자를 다음과 같이 간단히 정의할 수 있으며 매개변수로 받은 값이
+  // 자동으로 인스턴스 변수에 할당된다.
   Tv(this.name, this.channel);
-
-  // 네임드 생성자(named constructor)
-  // "클래스명.네임드 생성자명" 형식으로 생성자를 정의할 수 있으며 나머지는 위와 같다.
-  Tv.fromNamed(Map<String, dynamic> map)
-      : this.name = map["name"],
-        this.isPower = map['power'];
-
-  // 다트는 오버로딩을 지원하지 않지만 다음과 같이 강력한 선택적 매개변수를 사용할 수 있다.
-  // null이 허용되지 않는 프로퍼티는 required를 붙여줘야 한다.
-  Tv.creator({required this.name, this.channel, this.isPower=false});
 
   void power() {
     isPower = !isPower;
   }
 
-  int? channelUp() {
-    channel = channel != null ? channel! + 1 : 1; //channel ??= 1;
-
-    return channel = channel! + 1;
+  int channelUp() {
+    // 위에서 변수를 선언할 때 널 가능한 변수로 선언했기 때문에 아래와 같이
+    // 널이 아님을 단언하고 + 연산을 하거나 반환 타입을 int?로 선언해야 한다.
+    return channel! + 1;
   }
 
   int channelDown() {
-    return --channel;
+    return channel! - 1;
   }
+}
+
+void main() {
+  Tv tv = Tv("거실TV", 3);
+  tv.power();
+  print("현재 채널 : ${tv.channelUp()}");
 }
