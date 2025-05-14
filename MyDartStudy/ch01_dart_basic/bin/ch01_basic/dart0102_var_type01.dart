@@ -27,4 +27,12 @@ void main() {
   print(i);
   print(d);
   print(isTrue);
+
+  // 데이터 형 변환(type casting)
+  // 다음은 정수에서 실수 또는 문자열을 숫자, 숫자를 문자열로 변환할 때 사용하는 함수이다.
+  print("10 : ${10.toDouble()}, ${10.0.toInt()}");
+  print(10 + int.parse("10"));
+  print(10.0 + double.parse("10"));
+  print("10" + 10.toString() + 10.0.toString());
+
 }
