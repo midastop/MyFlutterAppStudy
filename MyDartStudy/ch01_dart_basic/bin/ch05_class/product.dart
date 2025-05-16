@@ -15,6 +15,14 @@ class Product {
     return _name;
   }
 
+  set price(int price) {
+    this._price = price;
+  }
+
+  int get price {
+    return _price;
+  }
+
   void productInfo() {
     print("상품명 : $_name, 가격 : $_price");
   }

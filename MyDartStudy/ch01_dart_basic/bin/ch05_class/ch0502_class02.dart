@@ -1,5 +1,5 @@
 // 생성자(Constructor)
-// https://dart.dev/language/constructors
+// https://dart-ko.dev/language/constructors
 class Tv {
   String name;
   bool isPower = false;
@@ -14,7 +14,7 @@ class Tv {
   // Tv(String name) : this.name = name, this.channel = channel;
 
   // 위의 생성자를 다음과 같이 간단히 정의할 수 있으며 매개변수로 받은 값이
-  // 자동으로 인스턴스 변수에 할당된다.
+  // 자동으로 인스턴스 변수에 할당된다. this는 자신의 인스턴스를 가리키는 변수 이다.
   Tv(this.name, this.channel);
 
   void power() {

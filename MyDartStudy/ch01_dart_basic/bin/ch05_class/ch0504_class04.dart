@@ -21,7 +21,6 @@ void main() {
   Product p = Product("컴퓨터", 100000);
   // Product 클래스에서 name 변수의 게터를 만들었기 때문에 값을 읽어온다.
   print(p.name);
-  // print(p.price); // price는 게터가 없어서 값을 읽어올 수 없다.
-
+  print(p.price);
   p.productInfo();
 }
