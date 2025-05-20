@@ -1,6 +1,6 @@
 // async와 await 02 - 반환 값이 있는 함수
 /* 비동기 처리를 위한 함수의 반환 값은 Future<T>와 같이 제네릭을 사용한다. 아래는 반환
- * 값이 문자열이므로 <String>을 사용한다. 그리고 async 키워드를 함수의 매개변수 정의와
+ * 값이 문자열이므로 <String>을 사용했다. 그리고 async 키워드를 함수의 매개변수 정의와
  * 함수 본문 사이에 지정하고 await 키워드를 대기 시킬 비동기 함수 앞에 지정하면 된다.
  **/
 Future<String> greeting(String name, int num) async {
@@ -20,7 +20,7 @@ void main() {
   Future<String> result1 = greeting("홍길동", 1);
   //print(result1);
   Future<String> result2 = greeting("이순신", 2);
-  //print(result2);
+  print(result2);
 
   result2.then((result) {
     print(result);
