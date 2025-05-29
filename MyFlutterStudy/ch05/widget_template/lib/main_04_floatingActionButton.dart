@@ -13,6 +13,7 @@ class MyApp extends StatelessWidget {
           onPressed: () {},
           child: Text('클릭')
         ),
+        body: Container(),
       ),
     );
   }

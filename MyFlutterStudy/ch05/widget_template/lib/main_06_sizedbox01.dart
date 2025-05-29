@@ -9,12 +9,16 @@ class MyApp extends StatelessWidget {
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
-        floatingActionButton: FloatingActionButton(
-          onPressed: () {},
-          child: Text('클릭')
+        body: Center(
+          child: SizedBox(
+            height: 200.0,
+            width: 200.0,
+            child: Container(
+              color: Colors.red,
+            ),
+          ),
         ),
       ),
     );
   }
-
 }
