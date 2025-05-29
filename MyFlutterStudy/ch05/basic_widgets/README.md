@@ -1,6 +1,6 @@
-# widget_template
+# basic_widgets
 
-widget template
+basic widgets
 
 ## Getting Started
 

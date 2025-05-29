@@ -1,4 +1,4 @@
-package com.flutterstudy.widget_template
+package com.example.basic_widgets
 
 import io.flutter.embedding.android.FlutterActivity
 
