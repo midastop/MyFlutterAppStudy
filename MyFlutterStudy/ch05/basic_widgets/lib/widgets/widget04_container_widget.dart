@@ -1,8 +1,6 @@
 import 'package:flutter/material.dart';
 
-
-
-class MyApp extends StatelessWidget {
+class ContainerExam extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
@@ -15,7 +13,7 @@ class MyApp extends StatelessWidget {
               color: Colors.black,
             ),
             borderRadius: BorderRadius.circular(
-              16.0
+                16.0
             ),
           ),
           width: 200.0,

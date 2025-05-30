@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
-
-class ButtonsExam extends StatelessWidget {
+// 버튼 위젯들(Button Widgets)
+class ButtonExam extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(

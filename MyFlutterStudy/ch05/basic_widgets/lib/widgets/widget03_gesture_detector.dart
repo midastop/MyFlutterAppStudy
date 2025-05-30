@@ -1,12 +1,15 @@
 import 'package:flutter/material.dart';
 
-
-
-class MyApp extends StatelessWidget {
+// 제스처 디텍터(Gesture Dector)와 플로팅 액션 버트(Floating Action Button)
+class GestureDetectorExam extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
+        floatingActionButton: FloatingActionButton(
+            onPressed: () { print("floating clicked"); },
+            child: Text('클릭')
+        ),
         body: Center(
           child: GestureDetector(
             onTap: () { print('on Tap'); },
