@@ -1,15 +1,15 @@
 import 'package:flutter/material.dart';
-// 로우 위젯(Row Widget)
-class RowWidgetExam extends StatelessWidget {
+
+class ColumnWidgetExam extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return MaterialApp(
       home: Scaffold(
         body: SizedBox(
-          // 반대축에서 이동할 공간을 제공해주기 위해서 높이를 최대한으로 설정 
-          height: double.infinity,
-          child: Row(
-            mainAxisAlignment: MainAxisAlignment.center,
+          // 반대축에서 이동할 공간을 제공해주기 위해서 너비를 최대한으로 설정
+          width: double.infinity,
+          child: Column(
+            mainAxisAlignment: MainAxisAlignment.end,
             crossAxisAlignment: CrossAxisAlignment.center,
             children: [
               Container(
@@ -35,4 +35,5 @@ class RowWidgetExam extends StatelessWidget {
       ),
     );
   }
+
 }
