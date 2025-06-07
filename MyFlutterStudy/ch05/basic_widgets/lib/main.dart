@@ -10,6 +10,7 @@ import "widgets/widget08_row_widget.dart";
 import "widgets/widget09_column_widget.dart";
 import "widgets/Widget10_flexible_widget.dart";
 import "widgets/widget11_expanded_widget.dart";
+import "widgets/widget12_stack_widget.dart";
 
 void main() {
   runApp(MyApp());
@@ -31,7 +32,8 @@ class MyApp extends StatelessWidget {
           //child: RowWidgetExam(),
           //child: ColumnWidgetExam(),
           //child: FlexibleExam(),
-          child: ExpandedExam(),
+          //child: ExpandedExam(),
+          child: StackExam(),
         )
       )
     );
