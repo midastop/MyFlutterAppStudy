@@ -1,0 +1,29 @@
+{
+  "project_info": {
+    "project_number": "199734096674",
+    "project_id": "fir-exam-38d55",
+    "storage_bucket": "fir-exam-38d55.firebasestorage.app"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:199734096674:android:37903767c72ac71d1eab7b",
+        "android_client_info": {
+          "package_name": "com.flutterstudy.library_firebase_app"
+        }
+      },
+      "oauth_client": [],
+      "api_key": [
+        {
+          "current_key": "AIzaSyD1GDPpoOfv0fgGPMrX3Sv138bo_tX0aZE"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": []
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
