@@ -65,4 +65,5 @@ class DefaultFirebaseOptions {
     storageBucket: 'fir-exam-38d55.firebasestorage.app',
     iosBundleId: 'com.flutterstudy.posonalityTest',
   );
+
 }
