@@ -44,7 +44,7 @@ class _MainPage extends State<MainPage> {
                     onTap: () async {
                       Navigator.of(context)
                           .push(MaterialPageRoute(builder: (context) {
-                        return QuestionPage(question: list["question"][value]["file"].toString());
+                        return QuestionPage(question: list["questions"][value]["file"].toString());
                       }));
                     },
                   );
