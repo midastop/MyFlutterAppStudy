@@ -24,7 +24,7 @@ class _DetailPage extends State<DetailPage> {
             Text(widget.answer),
             ElevatedButton(
               onPressed: () {
-
+                Navigator.of(context).pop();
               },
               child: const Text("돌아가기"),
             ),
