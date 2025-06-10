@@ -8,6 +8,22 @@ void main() {
 Dart 2 ~ 3 일
 앱 개발 3일 - 6일
 
+폴더 구조
+
+FlutterStudy
+	DartStudy
+		ch01_basic
+		ch02_controls
+
+	FlutterStudy
+		ch01
+			first_app
+		ch02
+			basic_widgets
+		ch03
+			web_app
+
+
 1. Dart 시작하기
 	- 다트 환경설정
 	- 다트 프로젝트 만들기
