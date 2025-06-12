@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 
+// Container, Center, Text 위젯 사용
 class TextWidgetExam extends StatelessWidget {
   const TextWidgetExam({super.key});
 
@@ -9,7 +10,7 @@ class TextWidgetExam extends StatelessWidget {
     // 위젯의 크기, 배경색, 테두리 등을 지정할 때 주로 사용한다.
     return Container(
 
-      // BoxDecoration 위젯은 Container 위젯의 디자인 적용하는
+      // BoxDecoration 위젯은 Container 위젯의 디자인을 적용하는
       // 위젯으로 컨테이너의 배경색, 테두리 등의 속성을 설정할 수 있다.
       decoration: BoxDecoration(
         color: Colors.deepOrange,

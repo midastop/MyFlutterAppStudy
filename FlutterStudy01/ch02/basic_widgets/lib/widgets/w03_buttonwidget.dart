@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// 버튼 위젯들(Button Widgets)
+// Center, Column, SizedBox, 여러 버튼 위젯 사용
 class ButtonWidgetExam extends StatelessWidget {
   const ButtonWidgetExam({super.key});
 

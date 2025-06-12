@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 
-// 제스처 디텍터(Gesture Dector)와 플로팅 액션 버트(Floating Action Button)
+// Floating Action Button, SafeArea, Gesture Dector, Container, Padding 위젯 사용 
 class GestureDetectorExam extends StatelessWidget {
   @override
   Widget build(BuildContext context) {

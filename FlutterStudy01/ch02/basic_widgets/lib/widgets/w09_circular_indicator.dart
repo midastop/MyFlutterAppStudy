@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 
+// Container, Column, Image, CircularProgressIndicator, SizedBox, Flexible, Expanded 위젯 사용
 class CircularIndicatorExam extends StatelessWidget {
   const CircularIndicatorExam({super.key});
 
@@ -13,15 +14,16 @@ class CircularIndicatorExam extends StatelessWidget {
         // Column 위젯에서 주축의 기본 크기는 부모의 여유 공간을 최대로 채우는
         // 크기를 가지며 교차축의 기본 크기는 컨텐츠의 크기가 됨
         mainAxisSize: MainAxisSize.max,
+
         // 주축의 기본 정렬은 start이며 교차축은 center 임
-        mainAxisAlignment: MainAxisAlignment.center,        
-        //crossAxisAlignment: CrossAxisAlignment.center,
+        mainAxisAlignment: MainAxisAlignment.center,
         children: [
           Image.asset('assets/flutter_log.png'),
-          SizedBox(height: 50.0),
+          // 로딩 애니메이션
           CircularProgressIndicator(),
-          //Expanded(child: Image.asset('assets/flutter_log.png')),
-          //Flexible(child: CircularProgressIndicator()),
+          SizedBox(height: 50.0),
+          Flexible(child: Image.asset('assets/flutter_log.png')),
+          Expanded(child: CircularProgressIndicator()),
         ],
       ),
     );
