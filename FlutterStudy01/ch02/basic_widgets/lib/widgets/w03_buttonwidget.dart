@@ -7,8 +7,6 @@ class ButtonWidgetExam extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Center(
-      // Column 위젯은 children 파라미터를 통해 여러 자식 위젯을 가질 수 있으며
-      // 자식 위젯을 세로 방향으로 배치하는 위젯이다.
       child: Column(
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
@@ -22,17 +20,15 @@ class ButtonWidgetExam extends StatelessWidget {
             style: TextButton.styleFrom(foregroundColor: Colors.red),
             child: Text("텍스트 버튼"),
           ),
-          OutlinedButton(
+          OutlinedButton( // 테두리가 있는 버튼
             onPressed: () {
               print('OutlinedButton Clicked');
             },
             style: OutlinedButton.styleFrom(foregroundColor: Colors.blue),
-            child: Text("아웃라인 버튼"),
+            child: Text("아웃라인드 버튼"),
           ),
-          // SizedBox 위젯은 일반적으로 일정 크기의 공간을 공백으로 둘 때 사용
-          // Container 위젯도 가능하지만 성능면에서 SizeBox가 유리함
           SizedBox(height: 40.0),
-          ElevatedButton(
+          ElevatedButton( // 입체적으로 튀어나온 버튼
             onPressed: () {
               print('ElevatedButton Clicked');
             },
@@ -40,7 +36,7 @@ class ButtonWidgetExam extends StatelessWidget {
               foregroundColor: Colors.white,
               backgroundColor: Colors.red,
             ),
-            child: Text("엘리베이트 버튼"),
+            child: Text("엘리베이티드 버튼"),
           ),
           IconButton(
             onPressed: () {

@@ -8,6 +8,7 @@ class TextWidgetExam extends StatelessWidget {
     // Container 위젯은 하위에 다른 위젯을 담을 때 사용하며
     // 위젯의 크기, 배경색, 테두리 등을 지정할 때 주로 사용한다.
     return Container(
+
       // BoxDecoration 위젯은 Container 위젯의 디자인 적용하는
       // 위젯으로 컨테이너의 배경색, 테두리 등의 속성을 설정할 수 있다.
       decoration: BoxDecoration(

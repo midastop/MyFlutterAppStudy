@@ -3,8 +3,9 @@ import 'widgets/w01_textwidget.dart';
 import 'widgets/w02_imagewidget.dart';
 import 'widgets/w03_buttonwidget.dart';
 import 'widgets/w04_gesture_detector.dart';
-import 'widgets/w09_circular_indicator.dart';
 import 'widgets/w10_row_columnwidget.dart';
+import 'widgets/w09_circular_indicator.dart';
+
 
 void main() {
   // WidgetExam 안에서 body를 변경하는 것은 hot reload가 적용됨
@@ -23,10 +24,10 @@ class WidgetExam extends StatelessWidget {
       home: Scaffold(
         //body: TextWidgetExam(),
         //body: ImageWidgetExam(),
-        //body: ButtonWidgetExam(),
-        body: GestureDetectorExam(),
-        //body: CircularIndicatorExam(),
+        // body: ButtonWidgetExam(),
+        //body: GestureDetectorExam(),
         //body: RowAndColumnExam(),
+        body: CircularIndicatorExam(),
       ),
     );
   }
