@@ -1,7 +1,7 @@
 import "package:flutter/material.dart";
 
-class HomeScreen extends StatelessWidget {
-  const HomeScreen({super.key});
+class StatelessLifeCycle01 extends StatelessWidget {
+  const StatelessLifeCycle01({super.key});
 
   @override
   Widget build(BuildContext context) {
@@ -11,7 +11,7 @@ class HomeScreen extends StatelessWidget {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            MyStatelessWidget(),
+            MyWidget(),
           ],
         ),
       ),
@@ -19,8 +19,8 @@ class HomeScreen extends StatelessWidget {
   }
 }
 
-class MyStatelessWidget extends StatelessWidget {
-  const MyStatelessWidget({super.key});
+class MyWidget extends StatelessWidget {
+  const MyWidget({super.key});
 
   @override
   Widget build(BuildContext context) {
