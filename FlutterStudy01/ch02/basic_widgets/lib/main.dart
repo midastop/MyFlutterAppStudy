@@ -22,6 +22,10 @@ void main() {
 class WidgetExam extends StatelessWidget {
   const WidgetExam({super.key});
 
+  // build() 함수는 위젯의 UI를 구성하는 핵심적인 역할을 하며 위젯 트리에 
+  // 표시될 위젯을 반환하도록 구현하면 된다. 다시 말해 화면에 보여주고 싶은
+  // 위젯이 반환되도록 구현하면 된다. 모든 위젯 클래스는 build() 함수를 
+  // 가지고 있으며 이 함수에서 반환하는 위젯이 화면에 렌더링 된다.
   @override
   Widget build(BuildContext context) {
 

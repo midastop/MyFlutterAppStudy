@@ -1,15 +1,17 @@
 import "package:flutter/material.dart";
 
-class StatefullLifeCycle01 extends StatefulWidget {
-  const StatefullLifeCycle01({super.key});
+// Stateful 위젯의 상태 변경이 없는 생명주기
+class StatefulLifeCycle01 extends StatefulWidget {
+  const StatefulLifeCycle01({super.key});
 
   @override
-  State<StatefullLifeCycle01> createState() => _StatefullLifeCycle01State();
+  State<StatefulLifeCycle01> createState() => _StatefulLifeCycle01State();
 }
 
-class _StatefullLifeCycle01State extends State<StatefullLifeCycle01> {
+class _StatefulLifeCycle01State extends State<StatefulLifeCycle01> {
   bool show = false;
 
+  // build() 함수는 최초 실행될 때 두 번 호출됨
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -18,16 +20,15 @@ class _StatefullLifeCycle01State extends State<StatefullLifeCycle01> {
         child: Column(
           mainAxisAlignment: MainAxisAlignment.center,
           children: [
-            if(show) MyWidget(),
+            if (show) MyWidget(),
             SizedBox(height: 24.0),
             ElevatedButton(
               onPressed: () {
-                //print("Clicked ~");
                 setState(() {
                   show = !show;
                 });
               },
-              child: Text("클릭해서 보이기/안보이기")
+              child: Text(show ? "감추기" : "보이기"),
             ),
           ],
         ),
@@ -38,51 +39,44 @@ class _StatefullLifeCycle01State extends State<StatefullLifeCycle01> {
 
 class MyWidget extends StatefulWidget {
   MyWidget({super.key}) {
-    print("MyWidget 생성자");
+    print("[1] MyWidget 생성자 실행됨");
   }
 
   @override
   State<MyWidget> createState() {
-    print("createState() 호출");
-
+    print("[2] MyWidget - createState() 실행됨");
     return _MyWidgetState();
   }
 }
 
 class _MyWidgetState extends State<MyWidget> {
-
   @override
   void initState() {
-    print("initState() 호출");
+    print("[3] _MyWidgetState - initState() 실행됨");
     super.initState();
   }
 
   @override
   void didChangeDependencies() {
-    print("didChangeDependencies() 호출");
+    print("[4] _MyWidgetState - didChangeDependencies() 실행됨");
     super.didChangeDependencies();
   }
 
   @override
   Widget build(BuildContext context) {
-    print("build() 호출");
-    return Container(
-      color: Colors.red,
-      width: 50.0,
-      height: 50,
-    );
+    print("[5] _MyWidgetState - build() 실행됨");
+    return Container(color: Colors.green, width: 100, height: 100);
   }
 
   @override
   void deactivate() {
-    print("deactivate() 호출됨");
+    print("[6] _MyWidgetState - deactivate() 실행됨");
     super.deactivate();
   }
 
   @override
   void dispose() {
-    print("dispose() 호출됨");
+    print("[7] _MyWidgetState - dispose() 실행됨");
     super.dispose();
   }
 }
-
