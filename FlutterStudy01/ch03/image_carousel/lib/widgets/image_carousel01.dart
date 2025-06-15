@@ -1,5 +1,6 @@
 import "package:flutter/material.dart";
 
+// 기본 이미지 캐러셀 만들기
 class ImageCarousel01 extends StatelessWidget {
   const ImageCarousel01({super.key});
 
