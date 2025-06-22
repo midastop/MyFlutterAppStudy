@@ -18,11 +18,11 @@ class CircularIndicatorExam extends StatelessWidget {
         // 주축의 기본 정렬은 start이며 교차축은 center 임
         mainAxisAlignment: MainAxisAlignment.center,
         children: [
-          Image.asset('assets/flutter_log.png'),
+          Image.asset('assets/images/flutter_log.png'),
           // 로딩 애니메이션
           CircularProgressIndicator(),
           SizedBox(height: 50.0),
-          Flexible(child: Image.asset('assets/flutter_log.png')),
+          Flexible(child: Image.asset('assets/images/flutter_log.png')),
           Expanded(child: CircularProgressIndicator()),
         ],
       ),
